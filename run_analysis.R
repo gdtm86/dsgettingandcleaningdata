@@ -1,6 +1,6 @@
 
-library(dplyr)
 library(plyr)
+library(dplyr)
 
 # Set the working directory
 setwd("./UCI HAR Dataset/")
@@ -55,4 +55,4 @@ grouped_descriptive_data <- group_by(descriptive_train_test_data, activity_label
 summarised_descriptive_data <- summarise_each(grouped_descriptive_data,funs(mean))
 
 # Save the tidy summarizied data set
-write.table(summarised_descriptive_data,file="summarized_tidy_data.txt",row.names = FALSE)
+write.table(summarised_descriptive_data,file="../summarized_tidy_data.txt",row.names = FALSE)
