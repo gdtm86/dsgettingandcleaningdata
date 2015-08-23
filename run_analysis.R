@@ -1,5 +1,6 @@
 
 library(dplyr)
+library(plyr)
 
 # Set the working directory
 setwd("./UCI HAR Dataset/")
