@@ -159,3 +159,5 @@ Following files from 'UCI HAR Dataset' are used in the analysis
 * Column 1 has the activity labels. [STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS]
 * Column 2 has the subject id. [1-30]
 * Columns [3-68] contain the average of the mean() and standard-deviation() for each measurement. Features/Variables are normalized and values are bounded within [-1,1].
+* Columns starting with prefix 't' are time domain signals/variables
+* Columns starting with prefix 'f' are frequency domain signals/variables
