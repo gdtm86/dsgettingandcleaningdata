@@ -76,11 +76,13 @@ Following files from 'UCI HAR Dataset' are used in the analysis
 6. Merge the training and test data
 7. Merge the training and test lables
 8. Merge the training and test subjects
-9. Add descriptive variable names to the merged test and train data by adding the feature names as the column names.
-10. Add descriptive activity lables [STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS] to the training and test lables by joining with the activity lables dataframe - (used plyr package's join command)
+9. Add descriptive variable names to the merged test and train data by adding the feature names from features.txt as the column names.
+10. Add descriptive activity lables [STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS] to the combined training and test lables by joining with the activity lables dataframe - (used plyr package's join method)
 11. Select only columns that have measurement's mean() and std() of each measurement
 12. Add descriptive activity lables and subject_ids to the combined train and test dataset by joining the dataframes by cbind
-13. Use dplyr packages' group_by method to group the descriptive combined dataset by 'activity_labe 
+13. Use dplyr package's group_by method to group the descriptive combined dataset by each activity and each subject
+14. Use dplyr package's summarise_each method to calculate the average of each variable/column for each activity and each subject.
+15. Save the tidy dataset in the current working directory in a file named 'summarized_tidy_data.txt' using write.table command
 
 ### Variables in the tidy dataset
 
