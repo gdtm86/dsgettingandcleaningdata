@@ -18,6 +18,7 @@ This is the main R script that performs the cleaning and transformation of the d
 #### Note: current directory that you are running the script from using the step 3 below should have the raw dataset donwloaded and unzipped into a directory called ('UCI HAR Dataset') 
 
 ### Steps to perform the analysis
-1. download the github repository of dsgettingcleaningdata 'git clone <repo-url>'
+1. download the github repository of dsgettingcleaningdata using command 'git clone https://github.com/gdtm86/dsgettingandcleaningdata.git'
 2. open the R console
 3. source('./dsgettingandcleaningdata/run_analysis.R')
+4. Once the script runs with no errors, tidy dataset is saved in the current directory in a text file named 'summarized_tidy_data.txt'
